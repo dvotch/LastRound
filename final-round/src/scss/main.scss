@@ -28,3 +28,15 @@
     color: $menu-text-color;
   }
 }
+
+.site-container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+}

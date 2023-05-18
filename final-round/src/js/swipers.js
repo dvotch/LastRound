@@ -24,7 +24,7 @@ const swiperKinds = new Swiper(".kinds__swiper", {
 const swiperPriceServices = new Swiper(".price-services__swiper", {
   spaceBetween: -35,
   pagination: {
-    el: "#price-services-pagination",
+    el: "#price-services__swiper-pagination",
     clickable: true,
     type: "bullets",
   },

@@ -24,7 +24,7 @@
   &__button {
     padding: 4px 0;
     position: relative;
-    left: 110px;
+    right: -110px;
     bottom: 30px;
     font-family: "TT Lakes Bold";
     font-size: 12px;
@@ -37,6 +37,12 @@
     letter-spacing: -0.15px;
     text-align: left;
     text-indent: 10px;
+    &::after {
+      position: absolute;
+      content: url("../img/arrow_white.svg");
+      z-index: 2;
+      right: 18px;
+    }
   }
   &__arrow {
     position: relative;

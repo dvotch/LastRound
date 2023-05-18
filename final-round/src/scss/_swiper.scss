@@ -22,7 +22,8 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   left: -10px;
 }
-.kinds__swiper {
+.kinds__swiper,
+.price-services__swiper {
   + .swiper-pagination-bullets.swiper-pagination-horizontal {
     top: 105%;
   }

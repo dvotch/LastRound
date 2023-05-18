@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "notosans";
-  src: url("../fonts/notosans.woff") format("woff");
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
   font-family: "TT Lakes Medium";
   src: url("../fonts/TTLakes-Medium.woff") format("woff");
   font-display: swap;
@@ -265,7 +259,8 @@ footer {
   left: -10px;
 }
 
-.kinds__swiper + .swiper-pagination-bullets.swiper-pagination-horizontal {
+.kinds__swiper + .swiper-pagination-bullets.swiper-pagination-horizontal,
+.price-services__swiper + .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 105%;
 }
 
@@ -320,7 +315,7 @@ footer {
 .item__button {
   padding: 4px 0;
   position: relative;
-  left: 110px;
+  right: -110px;
   bottom: 30px;
   font-family: "TT Lakes Bold";
   font-size: 12px;
@@ -333,6 +328,12 @@ footer {
   letter-spacing: -0.15px;
   text-align: left;
   text-indent: 10px;
+}
+.item__button::after {
+  position: absolute;
+  content: url("../img/arrow_white.svg");
+  z-index: 2;
+  right: 18px;
 }
 .item__arrow {
   position: relative;
@@ -426,11 +427,17 @@ footer {
   text-align: left;
 }
 .price-services__commercial-proposal {
+  position: relative;
   margin-top: 16px;
   font-family: "TT Lakes Medium";
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+}
+.price-services__commercial-proposal::after {
+  content: url("../img/arrow_pink.svg");
+  position: absolute;
+  right: 70px;
 }
 .price-services__swiper {
   margin-left: -8px;
@@ -464,4 +471,19 @@ footer {
   background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
   padding: 16px 0;
   color: #7e7e82;
+}
+
+.site-container {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .site-container {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-container {
+    width: 1440px;
+  }
 }
